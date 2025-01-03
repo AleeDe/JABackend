@@ -3,7 +3,7 @@ FROM maven:3.9.9-openjdk-21 AS build
 COPY . .
 RUN mvn clean package
 
-FROM openjdk:21.0.1-jdk-slim
+FROM openjdk:21-slim
 
 # Set the working directory inside the container
 
