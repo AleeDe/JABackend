@@ -67,7 +67,7 @@ public class PublicController {
     public ResponseEntity<?> getAllJournalEntries() {
         List<JournalEntry> journalEntries = journalEntryService.getAllJournalEntries();
         if(journalEntries.isEmpty()) {
-            return new ResponseEntity<>("No Journal Entries found", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>("NO Journal Entries found", HttpStatus.NOT_FOUND);
         }
         else {
             return new ResponseEntity<>(journalEntries, HttpStatus.OK);
