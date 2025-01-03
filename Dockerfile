@@ -14,4 +14,4 @@ COPY --from=build /target/Journal-0.0.1-SNAPSHOT.jar Journal.jar
 EXPOSE 8080
 
 # Command to run the Spring Boot application
-ENTRYPOINT ["java", "-jar", "your-spring-app.jar"]
+ENTRYPOINT ["java", "-jar", "Journal.jar"]
