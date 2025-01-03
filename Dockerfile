@@ -1,5 +1,5 @@
 # Use Maven official image with OpenJDK 21 
-FROM maven:3.9.9-openjdk-21 AS build
+FROM jelastic/maven:3.9.5-openjdk-21 AS build
 COPY . .
 RUN mvn clean package
 
