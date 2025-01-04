@@ -54,7 +54,7 @@ public class SpringSecurity {
         @Bean
         CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.addAllowedOrigin("https://ja-aleedes-projects.vercel.app/");
+        configuration.addAllowedOrigin("http://mindmemoirs.s3-website-us-east-1.amazonaws.com/");
         configuration.addAllowedMethod("*"); // Allow all HTTP methods
         configuration.addAllowedHeader("*"); // Allow all headers
         configuration.setAllowCredentials(true);
