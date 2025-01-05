@@ -54,7 +54,11 @@ public class SpringSecurity {
         @Bean
         CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
+        configuration.addAllowedOrigin("http://localhost:5173/");
         configuration.addAllowedOrigin("http://mindmemoirs.s3-website-us-east-1.amazonaws.com/");
+        configuration.addAllowedOrigin("http://ec2-3-91-150-183.compute-1.amazonaws.com/");
+        configuration.addAllowedOrigin("https://main.d1sc8hl8etaysu.amplifyapp.com/login/");
+        
         configuration.addAllowedMethod("*"); // Allow all HTTP methods
         configuration.addAllowedHeader("*"); // Allow all headers
         configuration.setAllowCredentials(true);
